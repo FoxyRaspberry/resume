@@ -1,3 +1,61 @@
+:root {
+  --intro-background-color: rgb(255, 255, 255);
+  --intro-header-background-color: rgb(172, 229, 239);
+}
+
 html {
-  color: blueviolet;
+  color: #0C0B06;
+}
+
+.intro__section {
+  padding: 20px;
+  background: var(--intro-background-color);
+}
+
+.intro__grid-container {
+  --column-1-width: 280px;
+  --column-2-width: 167px;
+
+  display: grid;
+  grid-template-columns: var(--column-1-width) var(--column-2-width);
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "photo logo"
+    "header header";
+  gap: 20px calc(100% - var(--column-1-width) - var(--column-2-width));
+}
+
+.intro__photo {
+  grid-area: photo;
+}
+
+.intro__logo {
+  grid-area: logo;
+}
+
+.intro__header {
+  grid-area: header;
+}
+
+.intro__photo {
+  width: 280px;
+  height: 320px;
+  border-radius: 14px;
+  background: #333
+}
+
+.intro__logo {
+  width: 167px;
+  height: 161px;
+  border: 1px solid #000000;
+  border-radius: 90px;
+  background: #333;
+}
+
+.intro__header {
+  font-family: 'Segoe Script';
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  background: var(--intro-header-background-color);
 }
