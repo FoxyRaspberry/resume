@@ -1,6 +1,7 @@
 :root {
   --intro-background-color: rgb(255, 255, 255);
   --intro-header-background-color: rgb(172, 229, 239);
+  --part-2__balloon-background-color: rgb(200, 177, 238);
 }
 
 html {
@@ -13,16 +14,12 @@ html {
 }
 
 .intro__grid-container {
-  --column-1-width: 280px;
-  --column-2-width: 167px;
-
   display: grid;
-  grid-template-columns: var(--column-1-width) var(--column-2-width);
-  grid-template-rows: auto auto;
+  justify-content: space-between;
   grid-template-areas: 
     "photo logo"
     "header header";
-  gap: 20px calc(100% - var(--column-1-width) - var(--column-2-width));
+  row-gap: 20px;
 }
 
 .intro__photo {
@@ -37,23 +34,23 @@ html {
   grid-area: header;
 }
 
-.intro__photo {
+.intro__photo img {
   width: 280px;
-  height: 320px;
+  height: 380px;
   border-radius: 14px;
   background: #333
 }
 
-.intro__logo {
-  width: 167px;
-  height: 161px;
+.intro__logo img {
+  width: 84px;
+  height: 81px;
   border: 1px solid #000000;
   border-radius: 90px;
   background: #333;
 }
 
 .intro__header {
-  font-family: 'Segoe Script';
+  font-family: 'Segoe Script', serif;
   font-size: 24px;
   line-height: 150%;
   text-align: center;
