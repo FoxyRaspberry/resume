@@ -10,7 +10,9 @@ html {
 
 .intro__section {
   padding: 20px;
-  background: var(--intro-background-color);
+  background-image: url("../pictures/background_Bart.jpg");
+  background-repeat: no-repeat;
+  background-position:right;
 }
 
 .intro__grid-container {
@@ -22,11 +24,11 @@ html {
   row-gap: 20px;
 }
 
-.intro__photo {
+.intro__photo-container {
   grid-area: photo;
 }
 
-.intro__logo {
+.intro__logo-container {
   grid-area: logo;
 }
 
@@ -34,14 +36,14 @@ html {
   grid-area: header;
 }
 
-.intro__photo img {
+.intro__photo {
   width: 280px;
   height: 380px;
   border-radius: 14px;
   background: #333
 }
 
-.intro__logo img {
+.intro__logo {
   width: 84px;
   height: 81px;
   border: 1px solid #000000;
@@ -50,9 +52,41 @@ html {
 }
 
 .intro__header {
-  font-family: 'Segoe Script', serif;
-  font-size: 24px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
   line-height: 150%;
   text-align: center;
-  background: var(--intro-header-background-color);
+}
+
+.part-2__section {
+  padding: 20px;
+  height: 540px;
+}
+
+.part-2__header {
+  height: 60px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.part-2__balloon-container {
+  float: left;
+}
+
+.part-2__balloon {
+  width: 257px;
+  height: 356px;
+}
+
+.part-2__about-myself {
+  height: 300px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30px;
+  text-align: justify;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
