@@ -2,6 +2,10 @@
   --intro-background-color: rgb(255, 255, 255);
   --intro-header-background-color: rgb(172, 229, 239);
   --part-2__balloon-background-color: rgb(200, 177, 238);
+
+  --skills-marker-icon-width: 36px;
+  --skills-marker-icon-margin-right: 6px;
+  --skills-marker-icon-space-width: calc(var(--skills-marker-icon-width) + var(--skills-marker-icon-margin-right))
 }
 
 .intro__section {
@@ -140,19 +144,19 @@
 
 .skills__law-marker,
 .skills__it-marker {
-  padding-left: 42px;
+  padding-left: var(--skills-marker-icon-space-width);
 }
 
 .skills__law-marker::before,
 .skills__it-marker::before {
   content: '';
   display: inline-block;
-  height: 36px;
-  width: 36px;
+  margin-right: var(--skills-marker-icon-margin-right);
+  margin-left: calc(var(--skills-marker-icon-space-width) * -1);
+  width: var(--skills-marker-icon-width);
+  height: var(--skills-marker-icon-width);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 6px;
-  margin-left: -42px;
 }
 
 .skills__law-marker::before {
