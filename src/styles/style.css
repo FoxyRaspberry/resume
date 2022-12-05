@@ -138,6 +138,11 @@
   list-style: none;
 }
 
+.skills__law-marker,
+.skills__it-marker {
+  padding-left: 42px;
+}
+
 .skills__law-marker::before,
 .skills__it-marker::before {
   content: '';
@@ -147,6 +152,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 6px;
+  margin-left: -42px;
 }
 
 .skills__law-marker::before {
