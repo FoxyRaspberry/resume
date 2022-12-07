@@ -172,22 +172,6 @@
 }
 
 .experience__header {
-  grid-area: header;
-}
-
-.experience__work-container {
-  grid-area: work;
-}
-
-.experience__internship-container {
-  grid-area: internship;
-}
-
-.experience__conclusion-container {
-  grid-area: conclusion;
-}
-
-.experience__header {
   margin: 0px;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 40px;
