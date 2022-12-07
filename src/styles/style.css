@@ -166,3 +166,69 @@
 .skills__it-marker::before {
   background-image: url('../pictures/great_idea_list_it.jpg');
 }
+
+.experience__section {
+  padding: 20px;
+}
+
+.experience__grid-container {
+  /* display: grid;
+  justify-content: space-between;
+  grid-template-areas: 
+    "header header" 
+    "work internship"
+    "conclusion conclusion";
+  column-gap: 5px; */
+}
+
+.experience__header {
+  grid-area: header;
+}
+
+.experience__work-container {
+  grid-area: work;
+}
+
+.experience__internship-container {
+  grid-area: internship;
+}
+
+.experience__conclusion-container {
+  grid-area: conclusion;
+}
+
+.experience__header {
+  margin: 0px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  background-color: rgb(255, 241, 164);
+}
+
+.experience__work-container,
+.experience__internship-container {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 35px;
+  margin-top: 25px;
+  border: 10px dotted rgb(136, 175, 246);
+}
+
+.experience__work-description,
+.experience__internship-description {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 25px;
+  margin-left: 150px;
+}
+
+.experience__internship-description {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 25px;
+  margin-left: 210px;
+}
+
+.experience__conclusion-container {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 35px;
+  text-align: justify;
+  margin-top: 20px;
+}
