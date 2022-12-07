@@ -171,16 +171,6 @@
   padding: 20px;
 }
 
-.experience__grid-container {
-  /* display: grid;
-  justify-content: space-between;
-  grid-template-areas: 
-    "header header" 
-    "work internship"
-    "conclusion conclusion";
-  column-gap: 5px; */
-}
-
 .experience__header {
   grid-area: header;
 }
